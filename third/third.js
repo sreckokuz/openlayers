@@ -45,7 +45,27 @@ function init() {
             format: new ol.format.GeoJSON()
         }),
         name: 'option3',
-        visible: true
+        visible: true,
+        style: new ol.style.Style({
+			fill: new ol.style.Fill({
+				color: [ 150, 70, 90, 0.5 ]
+			}),
+			stroke: new ol.style.Stroke({
+				color: [255, 255, 50],
+				width: 3
+			}),
+			image: new ol.style.Circle({
+				fill: new ol.style.Fill({
+					color: [244, 244, 100]
+				}),
+				stroke: new ol.style.Stroke({
+					color: [22,222,255],
+					width: 2
+				}),
+				radius: 10,
+				points: 10
+			})
+		})
     })
 
     const secondVectorLayer = new ol.layer.Vector({
@@ -54,7 +74,28 @@ function init() {
             format: new ol.format.GeoJSON()
         }),
         name: 'option4',
-        visible: false
+        visible: false,
+        style: new ol.style.Style({
+			fill: new ol.style.Fill({
+				color: [50, 70, 90, 0.6]
+			}),
+			stroke: new ol.style.Stroke({
+				color: [150,150,150],
+				width: 2.4
+			}),
+			image: new ol.style.RegularShape({
+				fill: new ol.style.Fill({
+					color: [233,133,33, 0.6]
+				}),
+				stroke: new ol.style.Stroke({
+					color: [111, 222, 11],
+					width: 1.6
+				}),
+				points: 5,
+				radius1: 10,
+				radius2: 5
+			})
+		})
     });
 
     const thirdVectorLayer = new ol.layer.Vector({
@@ -63,7 +104,23 @@ function init() {
             format: new ol.format.GeoJSON()
         }),
         name: 'option5',
-        visible: false
+        visible: false,
+        style: new ol.style.Style({
+			fill: new ol.style.Fill({
+				color: [40, 119,247, 0.5]
+			}),
+			stroke: new ol.style.Stroke({
+				color: [30, 30, 30, 1],
+				width: 1.2,
+				lineJoin: 'bevel',
+				lineDash: [3, 6]
+			}),
+			image: new ol.style.Icon({
+				src: 'https://sreckokuz.github.io/hosting-/icons8-marker-64.png',
+				size: [100, 100],
+				scale: 0.5
+			})
+		})
     })
 
     const vectorGroup = new ol.layer.Group({
