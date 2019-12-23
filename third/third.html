@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="third.css">
+    <link rel="stylesheet" href="../libs/v6.1.1-dist/ol.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img
+                src="https://100najvecih.ba/wp-content/uploads/2019/09/logo-planet-soft.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="../index.html"><button class="btn btn-sm btn-outline-success" type="button">Draw</button></a>
+                <a href="../second/second.html"><button class="btn btn-sm btn-outline-success"
+                        type="button">Select</button></a>
+                <a href="third.html"><button class="btn btn-sm btn-outline-success" type="button">Display</button></a>
+            </div>
+        </div>
+    </nav>
+    <div id="bar">
+        <div>
+            <h6>Raster layers:</h6>
+            <div class="container">
+                <div id="vector">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                        value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        OSM
+                    </label><br>
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2"
+                        value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                        Bing Maps
+                    </label>
+                </div>
+            </div>
+        </div><br>
+        <div class="container">
+            <div id="raster">
+                <h6>Vector layers:</h6>
+                <input class="form-check-input" type="checkbox" value="option3" id="defaultCheck1" checked>
+                <label class="form-check-label" for="defaultCheck1">
+                    Defa
+                </label><br>
+                <input class="form-check-input" type="checkbox" value="option4" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Disabled checkbox
+                </label><br>
+                <input class="form-check-input" type="checkbox" value="option5" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                    Disabled checkbox
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4-src.js"></script>
+    <script src="./third.js"></script>
+    <script src="../libs/v6.1.1-dist/ol.js"></script>
+
+</body>
+
+</html>

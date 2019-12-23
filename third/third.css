@@ -1,0 +1,57 @@
+
+#map {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+#bar {
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	padding: 12px;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
+#bar > p {
+	padding: 2px 4px;
+	display: block;
+	color: black;
+	border-radius: 4px;
+	background-color: #12f312;
+	border: 1px solid #4cae4c;
+	cursor: pointer;
+}
+
+#bar > p:hover {
+	background-color: #449d44;
+	border-color: #398439;
+}
+
+
+.ol-zoom  {
+	display: none;
+}
+
+nav {
+	position: absolute;	
+
+}
+.bg-light {
+	opacity: 0.9;
+}
+
+.navbar-brand > img{
+	height: 30px;
+}
+
+.active {
+    background-color: #7733ff !important;
+    border-color: #7733ff !important;
+    color: white !important;
+}
+#popup {
+    background-color: rgba(255, 255, 255, 0.8);
+}

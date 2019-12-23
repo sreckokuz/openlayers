@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="libs/v6.1.1-dist/ol.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img
+                src="https://100najvecih.ba/wp-content/uploads/2019/09/logo-planet-soft.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="topnav">
+            <div class="topnav-right">
+                <a href="index.html"><button class="btn btn-sm btn-outline-success" type="button">Draw</button></a>
+                <a href="second/second.html"><button class="btn btn-sm btn-outline-success"
+                        type="button">Select</button></a>
+                <a href="third/third.html"><button class="btn btn-sm btn-outline-success"
+                        type="button">Display</button></a>
+
+            </div>
+        </div>
+    </nav>
+    <div id="bar">
+        <p id="pan" class="active">Pan</p>
+        <p id="addPoint">Add Point</p>
+        <p id="drawLine">Draw Line</p>
+        <p id="drawPolygon">Draw Polygon</p>
+    </div>
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Header</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <form id="test" method="POST">
+                        <input type="text" name="name" placeholder="Some text content" class="form-control"><br>
+                        <input type="text" name="age" placeholder="Some number" class="form-control">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" data-dismiss="modal" id="submitForm">Submit</button>
+
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="bar2" style="float: right; position: relative;background-color: rgba(255, 255, 255, 0.8);">
+        <div class="container">
+            <p id="geojson"></p>
+            <p id="sometext"></p>
+            <p id="somenumber"></p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.6.0/proj4-src.js"></script>
+    <script src="./main.js"></script>
+    <script src="libs/v6.1.1-dist/ol.js"></script>
+
+</body>
+
+</html>
