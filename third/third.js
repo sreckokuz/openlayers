@@ -21,7 +21,15 @@ function init() {
         }),
         name: 'option2',
         visible: false
-    });
+    });		
+	//stamen
+	const stamenMap = new ol.layer.Tile({
+		   source: new ol.source.Stamen({
+			   layer: 'watercolor'
+		   }),
+		   visible: false,
+		   name: 'option3'
+	   });	
 
     const baseLayerGroup = new ol.layer.Group({
         layers: [osmRasterLayer, bingRasterLayer]
