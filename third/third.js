@@ -32,7 +32,7 @@ function init() {
 	   });	
 
     const baseLayerGroup = new ol.layer.Group({
-        layers: [osmRasterLayer, bingRasterLayer]
+        layers: [osmRasterLayer, bingRasterLayer, stamenMap]
     });
     map.addLayer(baseLayerGroup);
     const rasterLayers = document.querySelectorAll('#vector > input[type=radio]')
